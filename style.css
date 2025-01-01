@@ -1,0 +1,138 @@
+/* Basic reset and background */
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background: #f9f9f9;
+    color: #333;
+    position: relative;
+  }
+  
+  /* Title styles */
+  h1, h2, h3 {
+    text-align: center;
+    color: #4a4a4a;
+  }
+  
+  /* Subtitle under the main title */
+  .subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin: -15px 0 20px 0; /* tighten spacing under the h1 */
+  }
+  
+  /* Flags in the top-right corner */
+  .flags {
+    position: absolute;
+    top: 2vw;   /* use viewport-based position for more responsiveness */
+    right: 2vw;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Let the flags resize with the viewport using vw units */
+  .flags img {
+    width: 4vw;        /* 4% of viewport width */
+    max-width: 35px;   /* cap the size on large screens */
+    height: auto;
+    margin-left: 1vw;  /* spacing also in vw for consistency */
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    transition: transform 0.2s;
+  }
+  
+  .flags img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Main container */
+  .container {
+    max-width: 600px;
+    margin: 60px auto 0 auto; /* top margin to avoid overlap with flags */
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Illustration section */
+  .illustration {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Make the wallet SVG responsive */
+  .illustration svg {
+    width: 60%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.9;
+  }
+  
+  /* Labels and Inputs */
+  label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Range slider area */
+  .slider-container {
+    margin: 20px 0;
+  }
+  
+  .slider-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  #priceOutput {
+    font-weight: bold;
+    color: #2f8be0;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+  }
+  
+  /* Result text */
+  .result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #444;
+  }
+  
+  .highlight {
+    color: #e02f6b;
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  .footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  .note {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 10px;
+  }
+  
